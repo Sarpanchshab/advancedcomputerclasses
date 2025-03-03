@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react"
+import Service from "./Service";
 
 
 // Array of image paths to be used in the slider
@@ -51,6 +52,7 @@ function Slider() {
       </button>
     </div>
   );
+  // <Service/>
 }
 
 export default Slider; // Export the component for use in other parts of the app

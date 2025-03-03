@@ -269,7 +269,7 @@ img {
 #mu-service {
   display: inline;
   float: left;
-  margin-top: -80px;
+  margin-top: 10px;
   width: 100%;
 }
 #mu-service .mu-service-area {
@@ -291,6 +291,7 @@ img {
 }
 #mu-service .mu-service-area .mu-service-single:nth-child(3) {
   background-color: #45a0de;
+  
 }
 #mu-service .mu-service-area .mu-service-single span {
   font-size: 30px;
