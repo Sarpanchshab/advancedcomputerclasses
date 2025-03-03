@@ -17,9 +17,10 @@ function Navbar() {
           </button>
           {/*  LOGO     */}
           {/*  TEXT BASED LOGO */}
-          <a className="navbar-brand" href="index.html"><i className="fa fa-university"></i><span>ADVANCED COMPUTER CLASSES</span></a>
+          {/* <a className="navbar-brand" href="index.html"><i className="fa fa-university"></i><span>ADVANCED COMPUTER CLASSES</span></a> */}
           {/* <!-- IMG BASED LOGO  --> */}
-          {/* <a className="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"/></a>  */}
+          <a className="navbar-brand" href="index.html"><i><img src="/assets/img/logo.png" className='nav-logo' alt="logo"/></i><span className='nav-text'>ADVANCED COMPUTER CLASSES</span></a> 
+        
         </div>
         <div id="navbar" className="navbar-collapse collapse">
           <ul id="top-menu" className="nav navbar-nav navbar-right main-nav">
