@@ -9,6 +9,7 @@
   /* Centers the slider */
   overflow: hidden;
   /* Hides overflow content */
+  margin-top: 85px;
 }
 
 /* Container for images */
@@ -75,19 +76,103 @@
   /* Darkens button on hover */
 }
 
-.nav-logo {
-  width: 60px;
-  height: 60px;
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  padding: auto;
+  gap: 10px; /* Adds space between logo and text */
+  text-decoration: none; /* Removes default link underline */
+}
 
+.nav-logo {
+  margin-top: 15px;
+  height: 65px; /* Adjust as needed */
+  width: auto;
 }
 
 .nav-text {
-  color: #ff5733;
+  margin-top: 15px;
+  font-size: 25px; /* Adjust text size */
   font-weight: bold;
+  color: #2ccf10; /* Adjust text color */
+  /* background-color: rgb(255, 255, 255); */
 }
+
 
 @media (max-width: 768px) { /* Tablets */
   .nav-text {
     font-size: 15px;
   }
+}
+
+/*==================
+ NAVBAR SECTION
+====================*/
+#mu-menu {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-menu .navbar-header .navbar-brand {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#mu-menu .navbar-header .navbar-brand i {
+  font-size: 35px;
+}
+#mu-menu .navbar-header .navbar-brand span {
+  margin-left: 4px;
+}
+#mu-menu .navbar-default {
+  background-color: hsla(0, 0%, 65%, 0);
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 0px;
+}
+#mu-menu .navbar-default .navbar-nav li > a {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: -1px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#mu-menu .navbar-default .navbar-nav li #mu-search-icon:hover, #mu-menu .navbar-default .navbar-nav li #mu-search-icon:focus {
+  border: none;
+}
+#mu-menu .navbar-default .navbar-nav li .dropdown-menu {
+  border-radius: 0px;
+}
+#mu-menu .navbar-default .navbar-nav li .dropdown-menu li a {
+  color: #3a3a3a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#mu-menu .navbar-default .navbar-nav li .dropdown-menu li a:hover, #mu-menu .navbar-default .navbar-nav li .dropdown-menu li a:focus {
+  color: #fff;
+}
+#mu-menu .navbar-default .navbar-nav .open a:hover, #mu-menu .navbar-default .navbar-nav .open a:focus {
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 7px;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  background-color: rgb(33, 37, 41) /* Adjust as needed */
+  /* box-shadow: 0 8px 6px rgba(255, 255, 255, 0.053);  */
+  
+}
+
+li{
+  color: white;
 }

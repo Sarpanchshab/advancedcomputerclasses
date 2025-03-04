@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-    
+    <div>
     {/*  Start footer  */}
   <footer id="mu-footer">
     {/*  start footer top */}
@@ -70,6 +70,7 @@ function Footer() {
     </div>
     {/*end footer bottom */}
   </footer>
+  </div>
   {/* End footer */}
   
     

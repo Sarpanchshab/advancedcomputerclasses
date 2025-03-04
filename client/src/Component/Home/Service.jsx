@@ -25,7 +25,7 @@ function Service() {
                                 {/* Start single service */}
                                 <div className="mu-service-single">
                                     <span className="fa fa-table"></span>
-                                    <h3>Best ClassNamclassName</h3>
+                                    <h3>Best Course</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
                                 </div>
                                 {/* Start single service */}
@@ -34,6 +34,8 @@ function Service() {
                     </div>
                 </div>
             </section>
+
+
         </>
     )
 }

@@ -1,74 +1,76 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <>
-     {/*  Start menu  */}
-  <section id="mu-menu">
-    <nav className="navbar navbar-default" role="navigation">  
-      <div className="container">
-        <div className="navbar-header">
-           {/* FOR MOBILE VIEW COLLAPSED BUTTON  */}
-          <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </button>
-          {/*  LOGO     */}
-          {/*  TEXT BASED LOGO */}
-          {/* <a className="navbar-brand" href="index.html"><i className="fa fa-university"></i><span>ADVANCED COMPUTER CLASSES</span></a> */}
-          {/* <!-- IMG BASED LOGO  --> */}
-          <a className="navbar-brand" href="index.html"><i><img src="/assets/img/logo.png" className='nav-logo' alt="logo"/></i><span className='nav-text'>ADVANCED COMPUTER CLASSES</span></a> 
-        
-        </div>
-        <div id="navbar" className="navbar-collapse collapse">
-          <ul id="top-menu" className="nav navbar-nav navbar-right main-nav">
-            <li className="active"><a href="index.html">Home</a></li>            
-            <li className="dropdown">
-              <a href="#" className="dropdown-toggle" data-toggle="dropdown">Course <span className="fa fa-angle-down"></span></a>
-              <ul className="dropdown-menu" role="menu">
-                <li><a href="course.html">Course Archive</a></li>                
-                <li><a href="course-detail.html">Course Detail</a></li>                
-              </ul>
-            </li>           
-            <li><a href="gallery.html">Gallery</a></li>
-            <li className="dropdown">
-              <a href="#" className="dropdown-toggle" data-toggle="dropdown">Blog <span className="fa fa-angle-down"></span></a>
-              <ul className="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">Blog Archive</a></li>                
-                <li><a href="blog-single.html">Blog Single</a></li>                
-              </ul>
-            </li>            
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="404.html">404 Page</a></li>               
-            <li><a href="#" id="mu-search-icon"><i className="fa fa-search"></i></a></li>
-          </ul>                     
-        </div> {/* .nav-collapse  */}
-      </div>     
-    </nav>
-  </section>
-  {/* End menu  */}
+      {/* Start menu */}
+      <section id="mu-menu">
+        <nav className="navbar navbar-default fixed-top" role="navigation">
+          <div className="container">
+            <div className="navbar-header">
+              {/* Mobile Menu Button */}
+              <button
+                type="button"
+                className="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbar"
+                aria-expanded="false"
+                aria-controls="navbar"
+              >
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+              </button>
 
-  {/* Start search box  */}
-  <div id="mu-search">
-    <div className="mu-search-area">      
-      <button className="mu-search-close"><span className="fa fa-close"></span></button>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">            
-            <form className="mu-search-form">
-              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter"/>              
-            </form>
+              {/* Logo */}
+              <Link to="/" className="navbar-brand nav-logo-container">
+                <img src="/assets/img/logo.png" className="nav-logo" alt="logo" />
+                <span className="nav-text">ADVANCED COMPUTER CLASSES</span>
+              </Link>
+
+            </div>
+
+            {/* Navbar Links */}
+            <div id="navbar" className="navbar-collapse collapse">
+              <ul id="top-menu" className="nav navbar-nav navbar-right main-nav">
+                <li className="active">
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/course">Course</Link>
+                </li>
+                <li>
+                  <Link to="/typing">Typing</Link>
+                </li>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                    Blog <span className="fa fa-angle-down"></span>
+                  </a>
+                  <ul className="dropdown-menu" role="menu">
+                    <li>
+                      <Link to="/blog-archive">Blog Archive</Link>
+                    </li>
+                    <li>
+                      <Link to="/blog-single">Blog Single</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to="/gallery">Gallery</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/*  End search box  */}
-
+        </nav>
+      </section>
+      {/* End menu */}
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

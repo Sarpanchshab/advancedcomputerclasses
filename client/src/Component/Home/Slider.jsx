@@ -5,8 +5,8 @@ import Service from "./Service";
 // Array of image paths to be used in the slider
 const images = [
   "/assets/img/slider/1.jpg",
-  "/assets/img/slider/2.jpg",
-  "/assets/img/slider/3.jpg",
+  "/assets/img/slider/2.png",
+  "/assets/img/slider/3.png",
 ];
 
 function Slider() {
@@ -27,7 +27,7 @@ function Slider() {
 
     // Auto-play effect
     useEffect(() => {
-        const interval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+        const interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
         return () => clearInterval(interval); // Cleanup interval on unmount
       }, []);
     
